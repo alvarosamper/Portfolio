@@ -1,0 +1,54 @@
+
+Voy a desarrollar de la forma más breve el desarrollo.
+
+PLANTEAMIENTO Y DESARROLLO
+
+Lo primero voy a comentar el modus operandi y como ha ido.
+
+En primer lugar, planteamos todo el desarrollo para ejecutarlo todo en formato 
+Yolo, ya que al tener que re-entrenar esta red neuronal, debemos realizar las etiquetas
+y todo en su formato.
+
+Este paso es esencial pues necesitamos etiquetar imagen a imagen para poder realizar 
+el entrenamiento de la red neuronal yolo v3.
+
+Una vez teníamos las imágenes descargadas y entrenadas. Debemos generar un fichero 
+.data(creacion-data.ipynb), con la información de la ubicación del train.txt, test.txt, class.names y
+el backup donde guardaremos los pesos generados. Los elementos train.txt y test.txt
+deben tener la ubicación de cada una de las imágenes y cada una de las imágenes .jpg
+debe tener un fichero .txt con el mismo nombre y la misma ubicación con la explicación
+tipo yolo de donde se encuentra cada una de las clases a clasificar.
+
+Una vez tenemos todo esto generado, debemos hacer un entrenamiento de transfer-learning
+pero antes de realizar el entrenamiento de transfer-learning debemos hacer una 
+modificación en la estructura de nuestra red neuronal, pues al estar entrenada a 
+80 clases, debemos modificarla para ajustar a nuestros parámetros.
+
+Con esto hecho, debemos hacer ya el ejercicio de transfer-learning(transfer-learning.ipynb),
+ha sido un procesode unas 6 horas.
+
+Una vez hecho esto, realizamos una clasificación respecto a unos nuevos vídeos
+que hemos obtenido (movil-reentreno.ipynb).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
