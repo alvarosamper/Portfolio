@@ -1,0 +1,57 @@
+OBJETIVO:
+- Para el posterior desarrollo de una app móvil, se nos pidió que fuesemos capaces
+de crear y realizar un dataset de sonidos que pueden ser estridentes para determinadas
+personas.
+- Una vez creado el dataset, debemos entrenar una red neuronal que pueda leer los
+archivos .wav y realizar una clasificación de estos.
+
+RESUMEN:
+Para entrenar este modelo, hemos realizado un ejercicio de transfer-learning basándonos
+en la red neuronal Yamnet.
+
+La parte más extensa del proyecto, ha sido la realización del dataset de los datos.
+Pues es la parte más importante y de ella dependen bastante los resultados y hemos 
+tenido que obtenerlos por nuestra cuenta.
+
+En concreto, el proceso fue la búsqueda y descarga del sonido de los vídeos en los que
+podría haber un ruido que nos interesase. Posteriormente utilizamos una app web
+para cortar los archivos .wav etiquetándolos como el sonido que queríamos. 
+En total, creamos un dataset con 317 archivos .wav  pertenecientes a 10 clases 
+diferentes. 
+clases=[petardos, disparo, taladro, gritos, perros, pitidos de coche, alarmas,
+	licuadora, aspirador]
+
+
+Una vez hecho esto, pasamos a realizar las transformaciones en 16 bits de los archivos
+.wav en tensores de dimension 1024, ya que es como está entrenada y sabe leer los 
+archivos .wav.
+
+
+Con todo listo, tenemos que desarrollar la red neuronal. Como venimos de un ejercicio
+de transfer learning, no es necesaria realizar una red neuronal compleja. De hecho,
+he probado diferentes combinaciones y la que mejor resultados hemos obtenido ha sido
+con una capa densa y otra de clasificación con una softmax.
+
+Después hicimos unas pruebas y guardamos los pesos del modelo en formato .h5
+
+--POSIBLES MEJORAS--
+Como hemos comentado no ha sido fáicl la obtención de los datos, por lo que una posible
+mejora sería la ampliación de estos. Aunque más que añadiendo nuevos que fue complicado
+realizaría un proceso de data augmentation o un proceso de creación de nuevo sonidos
+a partir de los sonidos que tenemos. Es decir, si tenemos 30 sonidos de licuadoras
+entrenar algún modelo que sea capaz de generarnos nuevos sonidos de licuadoras para 
+aumentar así nuestro dataset.
+
+No obstante, hemos obtenido buenos resultados a la hora de la clasificación.
+
+
+
+
+
+
+
+
+
+
+
+
