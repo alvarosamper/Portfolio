@@ -1,0 +1,26 @@
+OBJETIVOS:
+
+-El objetivo de este proyecto era ver y analizar los datos de una bomba
+de desagüe. Teníamos que resolver el problema presentado que era que una
+parte defendía que la bomba se activaba más veces últimamente
+(tras las supuestas mejoras) y la otra que con las mejoras se debería
+de activar menos.
+
+Realizamos al final un trabajo de filtrado y visualización de datos 
+para confirmar cualquier teoría.
+
+Estructura:
+
+-En primer lugar, contamos con dos datasets uno que nos habla
+de si la bomba y sus componentes están acoplados al sistema y otro
+que nos dice si la bomba está trabajando. Una vez visto los datos
+los limpiamos y notificamos cualquier fallo en la toma de datos para que 
+no se comprometan nuestros resultados.
+
+-Una vez hecho esto, debemos ajustar los dos datasets y quedarnos con los
+datos de activación de la bomba sólo cuando el otro dataset nos diga
+que la bomba está conectada. Realmente, solo en esta situación los datos 
+nos están resolviendo nuestra pregunta.
+
+-Para acabar, realizamos la visualización de los datos y sacamos las
+conclusiones pertinentes.
