@@ -18,6 +18,9 @@ Project Structure
 Data Extraction Module: Scripts to process PDFs and Excel files, standardizing data extraction from various formats.
 NLP Model: A multi-label classification model to match product descriptions with item codes, including handling rare categories.
 Model Evaluation: Performance metrics and error thresholds to identify items requiring human verification.
+Additional Documentation
+For more detailed information on the project, refer to the full documentation available in resume.pdf. To see the methodology we used for model selection, please refer to the notebook rare-category.ipynb.
+
 Future Improvements
 Enhanced Dataset for Rare Categories: Potential future work could involve further refining the model’s handling of rare categories, potentially by collecting more labeled data for underrepresented items.
 Improved Data Extraction Techniques: Ongoing work on improving data extraction from diverse file types may also increase model efficiency and accuracy.
